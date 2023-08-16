@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 export async function POST(request) {
   // // Replace the uri string with your connection string.
   let { action, slug, initialquantity } = await request.json();
-  const uri = "mongodb+srv://svmore456:svmore456@cluster0.a49w601.mongodb.net/";
+  const uri = "<connection-uri>";
 
   const client = new MongoClient(uri);
 
